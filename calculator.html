@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<meta charset="utf-8">
+	<meta name="viewpart" content="width=devie-width,initial-scale=1">
+</head>
+<body>
+<form>
+<table >
+<tr>
+	<td align="bottom-left" id="result" colspan=5>		
+</tr>
+<tr>
+	<td align="center"><input type="button" value="C" onclick="del()">
+	<td align="center"><input type="button" value="<-" onclick="backs()">		
+	<td align="center"><input type="button" value="/" onclick="cal('/')">		
+	<td align="center"><input type="button" value="*" onclick="cal('*')">		
+	<td align="center"><input type="button" value="-" onclick="cal('-')">
+</tr>
+<tr>
+	<td align="center"><input type="button" value="x²" onclick="pow2()">
+	<td align="center"><input type="button" value="7" onclick="cal('7')">		
+	<td align="center"><input type="button" value="8" onclick="cal('8')">		
+	<td align="center"><input type="button" value="9" onclick="cal('9')">		
+	<td align="center" rowspan=2><input type="button" id="rowspan1" value="+" onclick="cal('+')"></button>
+</tr>
+<tr>
+	<td align="center"><input type="button" value="xⁿ" onclick="cal('^')">
+	<td align="center"><input type="button" value="4" onclick="cal('4')">		
+	<td align="center"><input type="button" value="5" onclick="cal('5')">		
+	<td align="center"><input type="button" value="6" onclick="cal('6')">		
+</tr>
+<tr>
+	<td align="center"><input type="button" value="√" onclick="sqrroot()">
+	<td align="center"><input type="button" value="1" onclick="cal('1')">		
+	<td align="center"><input type="button" value="2" onclick="cal('2')">		
+	<td align="center"><input type="button" value="3" onclick="cal('3')">		
+	<td align="center" rowspan=2><input type="button" id="rowspan2" value="=" onclick="equal()"></button>
+</tr>
+<tr>
+	<td align="center"><input type="button" value="(" onclick="cal('(')">
+	<td align="center"><input type="button" value=")" onclick="cal(')')">		
+	<td align="center"><input type="button" value="0" onclick="cal('0')">		
+	<td align="center"><input type="button" value="." onclick="cal('.')">
+</tr>
+</table>
+</form>
+<script src="calculator.js"></script>
+</body>
+<html>
